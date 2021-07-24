@@ -1,15 +1,19 @@
+/* the universal selector selects all elements of any type*/
 * {
     border: 1px solid red;
   }
   
+  /* the type selector selects all elements of a given type, element type p */
   p {
     color: green;
   }
   
+   /* the type selector selects all elements of a given type, element type h1 */
   h1 {
     color: maroon;
   }
   
+  /* class */
   .title {
     color: teal;
   }
@@ -18,11 +22,12 @@
     text-transform: uppercase;
   }
   
+  /* ID */
   #article-title {
     font-family: cursive;
   }
   
-  /* attributes */
+  /*  attribute selector to select the <a> element with an href attribute value containing ‘florence’ */
   a[href*='florence'] {
     color: lightgreen;
   }
@@ -33,4 +38,9 @@
   
   a[href*='seoul'] {
     color: lightpink;
+  }
+
+  /* pseudo-class */
+  a:hover {
+    color: darkorange;
   }

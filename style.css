@@ -60,3 +60,10 @@
   #author-id {
     color: cornflowerblue;
   }
+
+  /* Chaining, when writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
+  This is done by combining multiple selectors, also known as chaining.
+  The code below will change the font of the h2 elements that also have the class destination. The last <h2> element (“More Destinations”) will remain unchanged. */
+  h2.destination {
+    font-family: Tahoma;
+  }

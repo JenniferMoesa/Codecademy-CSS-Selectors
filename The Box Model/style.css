@@ -45,7 +45,7 @@ body {
   /* 
   The OVERFLOW property controls what happens to content that spills,
   or overflows, outside its box. The most commonly used values are: 
-  hidden, scroll and overflow.
+  hidden, scroll and visible.
   */
   height: 1000px;
   overflow: scroll;

@@ -6,6 +6,22 @@ body {
   header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
+    /* When an element’s position is set to ABSOLUTE,
+    all other elements on the page will ignore the element
+    and act like it is not present on the page.
+    position: absolute; */
+    
+    /* We can FIX an element to a specific position on the page (regardless of user scrolling)
+    by setting its position to fixed,
+    and accompanying it with the familiar offset properties top, bottom, left, and right. 
+    This technique is often used for navigation bars on a web page.
+    */
+    position: fixed;
+    width: 100%;
+
+    /* The Z-INDEX property 
+    How far 'back' or 'forward' overlapping elements appear on a page. */
+    z-index: 10;
   }
   
   ul {
@@ -20,6 +36,12 @@ body {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
+    /* display: INLINE BLOCK
+    Inline-block elements can appear next to each other
+    and we can specify their dimensions using the width and height properties.
+    */
+    display: inline-block;
+    width: 80px;
   }
   
   li:hover {
@@ -71,6 +93,7 @@ body {
   footer {
     background-color: #DBE9EE;
     text-align: center;
+    height: 100px;
   }
   
   .welcome {
@@ -79,18 +102,27 @@ body {
     padding: 40px;
     text-align: center;
     width: 100%;
+    /* POSITION RELATIVE to TOP, BOTTOM, LEFT or RIGHT. */
+    position: relative;
+    top: 50px;
   }
   
   .question {
     text-align: center;
-    /* POSITION RELATIVE to TOP, BOTTOM, LEFT or RIGHT. */
-    position: relative;
+    /* The STICKY value is another position value that keeps an element in the document flow as the user scrolls, 
+    but sticks to a specified position as the page is scrolled further.  */
+    position: sticky;
     top: 40px;
+    /* clear: left; */
   }
   
   .answer {
     border: 1px solid #466995;
     margin: 20px;
+    /* DISPLAY controls the block level of an element, 
+    an INLINE BLOCK element does not start a new line and can be sized using the height and width properties*/
+    display: inline-block;
+    /* float: left: */
   }
   
   .answer:hover {
@@ -99,10 +131,34 @@ body {
   }
 
 
-/* The default position of an element can be changed by setting its position property. The position property can take one of five values:
+/* The default position of an element can be changed by setting its position property.
+The position property can take one of five values:
 
 static - the default value (it does not need to be specified)
 relative
 absolute
 fixed
 sticky */
+
+
+/* Review: Layout
+
+The POSITION PROPERTY allows you to specify the position of an element.
+When set to RELATIVE, an element’s position is relative to its default position on the page.
+When set to ABSOLUTE, an element’s position is relative to its closest positioned parent element.
+It can be pinned to any part of the web page, but the element will still move with the rest of the document when the page is scrolled.
+When set to FIXED, an element’s position can be pinned to any part of the web page.
+The element will remain in view no matter what.
+When set to STICKY, an element can stick to a defined offset position when the user scrolls its parent container.
+
+The Z-INDEX of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.
+
+The DISPLAY PROPERTY allows you to control how an element flows vertically and horizontally in a document.
+INLINE elements take up as little space as possible, and they cannot have manually adjusted width or height.
+BLOCK elements take up the width of their container and can have manually adjusted heights.
+INLINE-BLOCK elements can have set width and height, but they can also appear next to each other and do not take up their entire container width.
+
+The FLOAT property can move elements as far left or as far right as possible on a web page.
+You can CLEAR an element’s left or right side (or both) using the clear property.
+When combined with an understanding of the box model, positioning can create visually appealing web pages.
+*/

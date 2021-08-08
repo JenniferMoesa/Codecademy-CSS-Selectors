@@ -6,13 +6,10 @@ body {
   header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
-    /* When an element’s position is set to ABSOLUTE,
-    all other elements on the page will ignore the element
-    and act like it is not present on the page.
+    /* When an element’s position is set to ABSOLUTE, all other elements on the page will ignore the element and act like it is not present on the page.
     position: absolute; */
     
-    /* We can FIX an element to a specific position on the page (regardless of user scrolling)
-    by setting its position to fixed,
+    /* We can FIX an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed,
     and accompanying it with the familiar offset properties top, bottom, left, and right. 
     This technique is often used for navigation bars on a web page.
     */
@@ -37,9 +34,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     /* display: INLINE BLOCK
-    Inline-block elements can appear next to each other
-    and we can specify their dimensions using the width and height properties.
-    */
+    Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties.*/
     display: inline-block;
     width: 80px;
   }

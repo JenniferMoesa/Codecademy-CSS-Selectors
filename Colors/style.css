@@ -161,4 +161,12 @@ a {
 
 /* NOTES:
   In general, hex and RGB color representations are equivalent. Which you choose is a matter of personal taste.
-  That said, it’s good to choose one and be consistent throughout your CSS, because it’s easier to compare hex to hex and RGB to RGB.) */
+  That said, it’s good to choose one and be consistent throughout your CSS, because it’s easier to compare hex to hex and RGB to RGB.) 
+
+  Hue, Saturation, and Lightness
+  Hue is the first number. It refers to an angle on a color wheel.
+  Saturation refers to the intensity or purity of the color. 
+  Lightness refers to how light or dark the color is.
+  color: hsl(120, 60%, 70%);
+
+*/

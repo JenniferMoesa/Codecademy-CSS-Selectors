@@ -154,14 +154,32 @@ line-height: 1.4;
 text-align: justify;
 
 Typography is the art of arranging text on a page.
-Text can appear bold or thin with the font-weight property.
+
+CSS font-weight Property
+The CSS font-weight property declares how thick or thin should be the characters of a text.
+
+CSS font-style property
+The CSS font-style property determines the font style in which text will appear.
 Text can appear in italics with the font-style property.
+
+The CSS line-height property
 The vertical spacing between lines of text can be modified with the line-height property.
+
 Serif fonts have extra details on the ends of each letter. Sans-Serif fonts do not.
+
+CSS Fallback Fonts
+The CSS font-family property can have multiple fonts declared in order of preference.
 Fallback fonts are used when a certain font is not installed on a user’s computer.
+
 The word-spacing property changes how far apart individual words are.
 The letter-spacing property changes how far apart individual letters are.
 The text-align property changes the horizontal alignment of text.
+
+CSS Linking fonts
+Linking fonts allow user to use web fonts in the document. They can be imported in an HTML document by using the <link> tag. 
 Google Fonts provides free fonts that can be used in an HTML file with the <link> tag or the @font-face property.
-Local fonts can be added to a document with the @font-face property and the path to the font’s source.
+
+CSS @font-face rule
+The CSS @font-face rule allows external fonts or font files to be imported directly into stylesheets.
+The location of the font file must be specified in the CSS rule so that the files can be loaded from that location.
 */
